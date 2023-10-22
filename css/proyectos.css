@@ -1,0 +1,76 @@
+:root {
+  --blanco: #f7ebe8;
+  --blanco-2: #ffffff33;
+  --negro: #333333;
+  --negro-2: rgba(0, 0, 0, 0.5);
+  --tipo-titular: "Playfair Display", serif;
+  --tipo-principal: "Roboto", sans-serif;
+  --tipo-parrafos: "Lato", sans-serif;
+  --opacidad: 0.5;
+}
+/* Estilos para dispositivos móviles */
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.figureborder {
+  text-decoration: none;
+}
+
+.figure {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+}
+
+.figCaption {
+  text-align: center;
+  font-family: var(--tipo-titular);
+  font-size: 3vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .figureborder {
+    border: 3px solid #333333;
+  }
+
+  .figCaption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+  }
+
+  .figure:hover .figCaption {
+    opacity: 1;
+  }
+}
+
+/* Estilos para computadoras de escritorio */
+@media screen and (min-width: 992px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

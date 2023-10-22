@@ -1,0 +1,140 @@
+:root {
+  --blanco: #f7ebe8;
+  --blanco-2: #ffffff33;
+  --negro: #333333;
+  --negro-2: rgba(0, 0, 0, 0.5);
+  --tipo-titular: "Playfair Display", serif;
+  --tipo-principal: "Roboto", sans-serif;
+  --tipo-parrafos: "Lato", sans-serif;
+  --opacidad: 0.5;
+}
+
+.h1 {
+  min-height: 2em; /* Ajusta según sea necesario */
+}
+
+.divMain {
+  min-height: 100% !important;
+}
+
+.body {
+  min-height: 100vh;
+  overflow-y: scroll; /* Forzar siempre la barra de desplazamiento vertical */
+}
+.hashtags {
+  padding: 20px 10% 0 10%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.inforMasSobreMi,
+.educacion,
+.infoMain,
+.curriculum{
+  text-align: center;
+  padding: 20px;
+}
+
+.titulos {
+  padding-bottom: 10px;
+}
+
+.tarjeta {
+  margin-top: 10px;
+}
+
+.botonTarjeta {
+  display: inline-block;
+  width: 80%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--negro);
+  border: 2px solid var(--negro);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botonTarjeta:hover {
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+.tarjetaInformacion {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.tarjetaInformacion.active {
+    max-height: 500px; /* ajusta el valor según la altura máxima que desees */
+}
+
+
+.separacionSegundaVersion {
+    margin: 10px;
+}
+
+.subtitulo {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.h1 {
+  font-family: var(--tipo-titular);
+  font-size: 3vh;
+}
+
+/* Estilos específicos para pantallas grandes (992px en adelante) */
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0 auto; /* Centrar el contenido en pantallas grandes */
+  }
+
+  .nombre {
+    display: block;
+  }
+  /* ENCARGADO DE ENCAPSULAR TODO EL TITULO*/
+  .divMain {
+    display: flex;
+    padding: 20px 100px 20px 100px;
+    justify-content: center;
+    
+  }
+
+  .infoMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .imagenJL {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagenJL > img {
+    border-radius: 50%;
+  }
+
+  /* ENCARGADO DE ENCAPSULAR TODO EL TITULO*/
+  .p {
+    font-size: 2vh;
+
+  }
+  .titulos ,.subtitulo,.h5 {
+    font-size: 3vh;
+  }
+  /* ENCARGADO DE ENCAPSULAR EDUCACION Y SOBRE MI*/
+  .educacion , .inforMasSobreMi , .curriculum{
+    padding: 20px 200px 20px 200px;
+  }
+}

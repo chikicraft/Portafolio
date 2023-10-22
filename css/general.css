@@ -1,0 +1,127 @@
+:root {
+  --blanco: #f7ebe8;
+  --blanco-2: #ce7861;
+  --blancotres: #e7f3fc;
+  --negro: #333333;
+  --negro-2: rgba(0, 0, 0, 0.5);
+  --tipo-titular: "Playfair Display", serif;
+  --tipo-principal: "Roboto", sans-serif;
+  --tipo-parrafos: "Lato", sans-serif;
+  --opacidad: 0.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Estilos generales que aplican a todos los dispositivos */
+body {
+  font-family: var(--tipo-principal);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color:var(--blancotres) ;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--negro); /* Color de fondo */
+  color: var(--blanco);
+  font-family: var(--tipo-titular);
+  font-size: 20px;
+}
+
+.navegacion-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.separacion {
+  border-top: 1px solid #ccc;
+  margin: 10px 10px 0 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centra los elementos horizontalmente */
+}
+
+.logo > img {
+  width: 50px; /* Ancho de la imagen (ajusta según sea necesario) */
+  margin: 20px;
+}
+
+.nombre {
+  margin: 0; /* Elimina el margen del párrafo */
+  display: none;
+}
+
+.trabajo {
+  opacity: var(--opacidad);
+  font-size: 16px;
+}
+
+.puntoancla {
+  font-size: 2.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease; /* Agrega una transición suave de 0.3 segundos a la propiedad de transformación */
+}
+
+.ancla:hover {
+  transform: scale(1.1); /* Escala el elemento al 110% del tamaño original */
+}
+
+/* FOOTER */
+footer {
+  padding: 20px; /* Espaciado interno del footer */
+}
+
+.divFooter {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.imgrrss {
+  width: 30px; /* Ancho de la imagen */
+  margin: 0 10px; /* Espaciado entre las imágenes */
+}
+
+.negrita {
+ font-weight: bold;  
+}
+
+/* Estilos específicos para pantallas grandes (992px en adelante) */
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0 auto; /* Centrar el contenido en pantallas grandes */
+  }
+
+  .nombre {
+    display: block;
+  }
+}

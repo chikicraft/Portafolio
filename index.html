@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/js.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Portafolio Juan David</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <div class="navegacion-div">
+                <div class="logo">
+                    <img src="media/icon.png" alt="/" />
+                    <p class="nombre">Juan David Rojas -<span class="trabajo"> Desarrollador junior</span></p>
+                </div>
+                <div class="puntoancla">
+                    <a href="./" class="a ancla">Menu</a>
+                    <a href="./proyectos.html" class="a ancla">Proyectos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="divMain">
+            <div class="imagenJL">
+                <img src="media/yo.png" alt="ImgJL">
+            </div>
+            <div class="infoMain">
+                <div class="salvacion">
+                    <h1 class="h1" id="text-container"><h1>
+                </div>
+                <div class="div titulocontenido">
+                    <h2 class="h2">Desarrollador web | Programador</h2>
+                    <p class="p">Me encanta programar y me gusta aprender cosas nuevas. Estudié <span class="negrita">Front-end</span> y <span class="negrita">Back-End</span>. <br>Cuando conocí la <span class="negrita">programacion</span> me encantó y seguí aprendiendo por mi cuenta para implementar mis locas ideas en código, hacerlas realidad y darles un sentido. Me encanta enfrentar desafíos, aprender y resolver problemas de forma efectiva.</p>
+                    <div class="hashtags">
+                        <span>#HTML</span><span>#CSS</span><span>#JS</span><span>#PHP</span><span>#MySQL</span><span>#Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AQUI UN BARRA DE SEPARACION-->
+        <div class="separacion"></div>
+        <!-- AQUI UN BARRA DE SEPARACION-->
+        <div class="divMainDos"> 
+            <div class="educacion">
+            <h3 class="h3 titulos">Educación y Experiencia</h3>
+            <div class="tarjeta">
+                <button class="botonTarjeta" onclick="mostrarInformacion()">
+                    <h4 class="h4">Educacion</h4>
+                </button>
+                <div id="tarjetaInformacion1" class="tarjetaInformacion">
+                    <h4 class="subtitulo">Bachiller en la I.E.Alejandro Velez Barrientos</h4>
+                    <h5 class="h5">( 2013 - 2023 )</h5>
+                    <p class="p">Hice el Bachiller desde primero hasta once en la misma institución. En la institución, por medio de competencias de robótica, descubrí la programación en el año 2020 y seguí participando en ellas hasta el 2023.</p><br>
+                    <p class="p"><span class="negrita">Aptitudes:</span> Bachiller</p>
+                    <br>
+                    <h4 class="subtitulo">Tecnica en el desarrollo de Software</h4>
+                    <h5 class="h5">( 2021 - 2023 )</h5>
+                    <p class="p">Hice una técnica en el cefit / sena en la cual aprendí los fundamentos básicos de la programación, Frontend y Backend. El proyecto final era una base de datos que ayudara a la ciudadanía. Mi idea fue hacer una base de datos para la biblioteca.</p><br>
+                    <p class="p"><span class="negrita">Aptitudes: </span> HTML - CSS - JS - PHP - MySQL - Python - Django - C#</p><br>
+                </div>
+                <div class="separacionSegundaVersion"></div>
+                <button class="botonTarjeta" onclick="mostrarInformacionDos()">
+                    <h4 class="h4">Experiencia</h4>
+                </button>
+                <div id="tarjetaInformacion2" class="tarjetaInformacion">
+                    <h4 class="subtitulo">Competencias de <span class="negrita">Robotica</span></h4>
+                    <h5 class="h5">( 2020 - 2023 )</h5>
+                    <p class="p">Mi participación en las competencias de robótica a nivel municipal, nacional e internacional. Me dieron la oportunidad de participar cuando estábamos en pandemia y las dos primeras fueron virtuales, quedando en segundo lugar y primer lugar.</p><br>
+                    <p class="p"><span class="negrita">Aptitudes:  </span>El aprendisaje de arduino - Progrmacion en C++ enfocada en arduino - voltages - El funcionamiento de motor y resitencia con su devido uso</p>
+                    <br>
+                    <h4 class="subtitulo">Curso de programacio</h4>
+                    <h5 class="h5">( 2022 - 2023 )</h5>
+                    <p class="p">Hice un curso de programación llamado jovenes creativos con la empresa Sofka y la alcaldía de Envigado. Fue un curso en el cual nos ponían retos para saber quiénes eran los mejores programadores junior de Envigado. Fueron aceptados solo 200 personas de todo el municipio de Envigado y las 10 mejores páginas tendrían un cupo laboral.</p><br>
+                    <p class="p"><span class="negrita">Aptitudes:  </span>Emocional mente conciente - Trabajo en equipos - Cer conciente de gustos propios - progamacion orientada al Front-end</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AQUI UN BARRA DE SEPARACION-->
+        <div class="separacion"></div>
+        <!-- AQUI UN BARRA DE SEPARACION-->
+
+        <div class="inforMasSobreMi">
+            <h3 class="h3 titulos">Mas sobre mi</h3>
+            <p class="p">Vivo en <span class="negrita">Itagüi</span> y estudié en <span class="negrita">Envigado.</span>. Me encanta programar, construir y mirar su funcionamiento de las webs por simple <span class="negrita">diversión y aprendizaje</span>. Soy un joven de 17 años, con un título de técnico en programación de software, en el cual me especialicé en el <span class="negrita">desarrollo de aplicaciones web</span>. Mi objetivo principal es obtener <span class="negrita">experiencia y aprendizaje</span> en el mundo de la programación. Me considero una persona <span class="negrita">autodidacta</span>. Desde 2020 comencé en robótica y aprendí por mi cuenta para participar. Al llegar tan lejos, me dieron la oportunidad de hacer un <span class="negrita">curso de robótica</span>. Estoy dispuesto a aprender conocimientos nuevos y nuevas <span class="negrita">tecnologías</span> para mi mejor futuro laboral. Me encantaría entrar a <span class="negrita">educación superior</span> para aumentar mi conocimiento y ser parte de una universidad, <span class="negrita">es mi sueño</span>.</p>
+            <br>
+            <p class="p">No olvides que al <span class="negrita">final</span> de la página tienes mis redes de <span class="negrita">contacto</span> </p>
+        </div></div>
+       
+        <!-- AQUI UN BARRA DE SEPARACION-->
+        <div class="separacion"></div>
+        <!-- AQUI UN BARRA DE SEPARACION-->
+        <div class="curriculum">
+            <h3 class="h3 titulos">Curriculum</h3>
+            <a href="   "
+                class="a">
+                <button class="botonTarjeta">
+                    <h4 class="h4">
+                        <p class="p">Proximamente</p>
+                    </h4>
+                </button>
+            </a>
+        </div>
+
+        <!-- AQUI UN BARRA DE SEPARACION-->
+        <div class="separacion"></div>
+        <!-- AQUI UN BARRA DE SEPARACION-->
+    </main>
+
+    <footer class="footer">
+        <div class="divFooter">
+            <a title="Email" href="mailto:juandavidrojasvillegas@gmail.com" class="a"><img src="media/mail.png" alt="Mail"
+                    class="imgrrss"></a>
+            <a title="GitHub" href="https://github.com/chikicraft" class="a"><img src="media/github.png" alt="GitHub"
+                    class="imgrrss"></a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/juan-david-rojas-villegas-a30007284" class="a"><img src="media/linkedin.png"
+                    alt="LinkedIn" class="imgrrss"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
